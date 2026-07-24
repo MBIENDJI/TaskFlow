@@ -1,8 +1,7 @@
 from django.db import models
 
-# ==========================================================
+
 # ENUMERATIONS
-# ==========================================================
 
 class StatutProjet(models.TextChoices):
     ACTIF = "ACTIVE", "Actif"
@@ -20,10 +19,7 @@ class PrioriteTache(models.TextChoices):
     MOYENNE = "MEDIUM", "Moyenne"
     ELEVEE = "HIGH", "Élevée"
 
-
-# ==========================================================
 # MEMBRE
-# ==========================================================
 
 class Member(models.Model):
     name = models.CharField(max_length=100)
@@ -32,10 +28,7 @@ class Member(models.Model):
     def __str__(self):
         return self.name
 
-
-# ==========================================================
 # EQUIPE
-# ==========================================================
 
 class Team(models.Model):
     name = models.CharField(max_length=100)
@@ -53,9 +46,7 @@ class Team(models.Model):
         return self.name
 
 
-# ==========================================================
 # PROJET
-# ==========================================================
 
 class Project(models.Model):
 
@@ -78,10 +69,7 @@ class Project(models.Model):
     def __str__(self):
         return self.title
 
-
-# ==========================================================
 # TACHE
-# ==========================================================
 
 class Task(models.Model):
 
@@ -121,9 +109,7 @@ class Task(models.Model):
         return self.title
 
 
-# ==========================================================
 # COMMENTAIRE
-# ==========================================================
 
 class Comment(models.Model):
 
