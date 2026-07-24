@@ -13,9 +13,7 @@ from .models import (
 from .serializers import TaskSerializer
 
 
-# ==========================================================
 # TESTS MEMBRE
-# ==========================================================
 
 class TestMember(TestCase):
 
@@ -36,9 +34,7 @@ class TestMember(TestCase):
         )
 
 
-# ==========================================================
 # TESTS EQUIPE
-# ==========================================================
 
 class TestTeam(TestCase):
 
@@ -56,10 +52,7 @@ class TestTeam(TestCase):
             "Développement"
         )
 
-
-# ==========================================================
 # TESTS RELATION MEMBRE / EQUIPE
-# ==========================================================
 
 class TestRelationEquipe(TestCase):
 
@@ -84,10 +77,7 @@ class TestRelationEquipe(TestCase):
             equipe.members.all()
         )
 
-
-# ==========================================================
 # TEST VALIDATION METIER
-# ==========================================================
 
 class TestValidationTask(TestCase):
 
