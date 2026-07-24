@@ -1,0 +1,31 @@
+# Environnement virtuel
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Fichiers SQLite
+db.sqlite3
+
+# Fichiers de logs
+*.log
+
+# Variables d'environnement
+.env
+
+# Fichiers PyCharm
+.idea/
+
+# Dossiers de tests
+.pytest_cache/
+
+# Fichiers de couverture
+.coverage
+htmlcov/
+
+# Dossiers de migration compilés
+**/migrations/__pycache__/
