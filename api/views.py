@@ -22,9 +22,7 @@ from .serializers import (
 from .pagination import PaginationTaskFlow
 
 
-# ==========================================================
 # MEMBRE
-# ==========================================================
 
 class MemberViewSet(viewsets.ModelViewSet):
 
@@ -35,10 +33,7 @@ class MemberViewSet(viewsets.ModelViewSet):
     pagination_class = PaginationTaskFlow
 
 
-# ==========================================================
 # EQUIPE
-# ==========================================================
-
 class TeamViewSet(viewsets.ModelViewSet):
 
     queryset = Team.objects.all()
@@ -109,9 +104,7 @@ class TeamViewSet(viewsets.ModelViewSet):
             status=status.HTTP_200_OK)
 
 
-# ==========================================================
 # PROJET
-# ==========================================================
 
 class ProjectViewSet(viewsets.ModelViewSet):
 
@@ -125,9 +118,8 @@ class ProjectViewSet(viewsets.ModelViewSet):
 
     filterset_fields = ["status", "team"]
 
-# ==========================================================
+
 # TACHE
-# ==========================================================
 
 class TaskViewSet(viewsets.ModelViewSet):
 
@@ -147,9 +139,8 @@ class TaskViewSet(viewsets.ModelViewSet):
     ]
 
 
-# ==========================================================
+
 # COMMENTAIRE
-# ==========================================================
 
 class CommentViewSet(viewsets.ModelViewSet):
 
